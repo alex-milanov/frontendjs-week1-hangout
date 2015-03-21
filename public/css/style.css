@@ -1,10 +1,14 @@
 
 body {
     background: url("/img/bg.jpg") no-repeat scroll center top #1A1A1A;
+    color: #333;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
+    color: #144E9C
 }
 
 .container {
@@ -16,7 +20,7 @@ a {
 /* header */
 
 header {
-    height: 60px;
+    height: 70px;
 }
 
 header a {
@@ -28,31 +32,63 @@ header a {
     padding: 5px;
 }
 
-header a img {
-}
-
 
 /* section */
 
 
 /* section - content */
 
-section .content {
-    width: 70%;
+section {
+    background: url("/img/content-bg.png") repeat-y scroll 0px 0px #FFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    min-height: 100%;
     height: 100%;
-    display: block;
-    background: #EEE;
-    padding: 10px;
 }
+
+section hr {
+    color: rgba(0, 0, 0, 0.13);
+}
+
+section .content {
+    float: left;
+    width: 510px;
+}
+
+
+/* post */
+article a.title {
+    color: #64AF1B;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
 
 /* section - sidebar */
 
 .sidebar {
-    background: #CCC;
     float: right;
-    width: 30%;
-    height: 100%;
-    display: inline-block;
-    padding: 10px;
-    list-style: none;
+    width: 300px;
 }
+
+.sidebar .widget-title {
+    font-weight: bold;
+    margin: 0px 0px 0.5em;
+    font-size: 16px;
+}
+
+
+.sidebar ul.widget-list {
+    list-style: none;
+    background: white;
+    margin: 0px;
+    padding: 5px 7px;
+    border: 2px solid #8CBF1F;
+}
+
+.sidebar ul.li {
+    font-size: 16px;
+}
+

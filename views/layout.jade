@@ -9,8 +9,9 @@ html
                 img(src="img/logo.png")
         section
             .sidebar
-                ul
-                    li Category1
-                    li Category2
+                p.widget-title Category List
+                ul.widget-list
+                    li: a(href="/") Category1
+                    li: a(href="/") Category2
             .content 
                 block content

@@ -1,7 +1,8 @@
 extends layout
 
 block content
-    article
-        h2.title: a(href="/post.html") My First Blog Post
-        p.text.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet erat nec nulla dignissim pulvinar. Quisque nec velit a tortor posuere hendrerit malesuada feugiat turpis. Maecenas volutpat fermentum tempus. Cras fermentum magna id felis consectetur posuere. Sed non molestie sem. Vestibulum eu auctor mi. Donec convallis consequat erat, eget pharetra massa finibus id. Cras ut nibh quis leo porttitor accumsan sed sit amet lectus. Maecenas nec urna faucibus, dignissim quam at, sagittis lorem. Cras feugiat ut erat vel tristique. Donec a nibh vitae ante vestibulum aliquam ac vitae urna.
+    each post, id in posts
+        hr
+        article
+            a.title(href="/"+id+".html")= post.title
+            p.text= post.text
