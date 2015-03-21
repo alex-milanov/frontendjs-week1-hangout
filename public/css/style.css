@@ -1,0 +1,58 @@
+
+body {
+    background: url("/img/bg.jpg") no-repeat scroll center top #1A1A1A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 0px;
+    width: 900px;
+}
+
+/* header */
+
+header {
+    height: 60px;
+}
+
+header a {
+    margin:0px;
+    margin-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    padding: 5px;
+}
+
+header a img {
+}
+
+
+/* section */
+
+
+/* section - content */
+
+section .content {
+    width: 70%;
+    height: 100%;
+    display: block;
+    background: #EEE;
+    padding: 10px;
+}
+
+/* section - sidebar */
+
+.sidebar {
+    background: #CCC;
+    float: right;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
